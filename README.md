@@ -1,3 +1,5 @@
+<img alt="Logo of Blazor and Edge" src="./header.png">
+
 # Chrome/Edge browser extension with .NET Blazor
 
 ## .NET Project Template
