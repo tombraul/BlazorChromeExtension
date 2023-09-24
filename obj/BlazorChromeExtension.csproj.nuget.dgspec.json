@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/tombraul/Code/BlazorChromeExtension/BlazorChromeExtension.csproj": {}
+  },
+  "projects": {
+    "/Users/tombraul/Code/BlazorChromeExtension/BlazorChromeExtension.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tombraul/Code/BlazorChromeExtension/BlazorChromeExtension.csproj",
+        "projectName": "BlazorChromeExtension",
+        "projectPath": "/Users/tombraul/Code/BlazorChromeExtension/BlazorChromeExtension.csproj",
+        "packagesPath": "/Users/tombraul/.nuget/packages/",
+        "outputPath": "/Users/tombraul/Code/BlazorChromeExtension/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tombraul/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Blazor.BrowserExtension": {
+              "target": "Package",
+              "version": "[0.10.*, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.*, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.*, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.11, 7.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

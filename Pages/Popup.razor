@@ -1,0 +1,40 @@
+﻿@page "/popup.html"
+@inherits BasePage
+@inject IJSRuntime JSRuntime
+
+<div style="width: 400px" class="flex flex-col justify-center items-center p-4 rounded-lg text-lg">
+    <div @onclick="GetColor" class="shadow rounded p-2 bg-gray-100 border border-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pipette">
+            <path d="m2 22 1-1h3l9-9" />
+            <path d="M3 21v-3l9-9" />
+            <path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z" />
+        </svg>
+    </div>
+    <h1 class="font-bold text-2xl">Hello from Blazor</h1>
+    <p>This is my new awesome Chrome/Edge extension</p>
+    <p>Your picked color is:</p>
+    <div class="p-2 my-3">
+        <div style="background-color: @selectedColor" class="h-4 w-4 rounded-sm"></div> @selectedColor
+    </div>
+</div>
+
+@code
+{
+    private string selectedColor = "white";
+
+    private async Task GetColor()
+    {
+        try
+        {
+            selectedColor = await JSRuntime.InvokeAsync<string>("getColor");
+            StateHasChanged();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
+            throw;
+        }
+    }
+}

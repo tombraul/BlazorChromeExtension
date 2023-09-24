@@ -1,0 +1,41 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazorChromeExtension
+build_property.RootNamespace = BlazorChromeExtension
+build_property.ProjectDir = /Users/tombraul/Code/BlazorChromeExtension/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/tombraul/Code/BlazorChromeExtension
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/tombraul/Code/BlazorChromeExtension/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tombraul/Code/BlazorChromeExtension/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tombraul/Code/BlazorChromeExtension/Pages/Options.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3B0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tombraul/Code/BlazorChromeExtension/Pages/Popup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9wdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tombraul/Code/BlazorChromeExtension/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tombraul/Code/BlazorChromeExtension/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-asibsdeabn
