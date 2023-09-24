@@ -19,7 +19,7 @@ But you can clone this repository, build it and install it manually in your brow
   - Edge: [Load the extension](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/extension-sideloading)
 
 ## Javascript Interop
-Because WASM Blazor is running in a sandbox, it is not possible to access the DOM directly. (which is true for any WASM application)  
+Because WASM Blazor is running in a sandbox, it is not possible to access the DOM directly. (which is true for any WASM application) 
 To get around this, we can use Javascript Interop. In the JS file `wwwroot/js/eyeDropper.js` 
 we have a function `getColor` that returns the color of a pixel on the screen. In our `Pages/Popup.razor` file we use the
 `@inject IJSRuntime JSRuntime` directive to inject the JS runtime. We can then call the `getColor` function from our C# code.  
