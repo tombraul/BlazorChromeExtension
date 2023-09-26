@@ -18,12 +18,16 @@
     <div class="p-2 mb-2 flex justify-center items-center space-x-2">
         <div style="background-color: @selectedColor" class="h-4 w-4 rounded-sm"></div>
         <div>@selectedColor</div>
+        <Button Type="@ButtonType.Primary" Size="@ButtonSize.Default">Copy</Button>
     </div>
 </div>
 
 @code
 {
-    private string selectedColor = "white";
+    /**
+     * This is a awesome variable
+     */
+    private string selectedColor = "#0d0d0d";
 
     private async Task GetColor()
     {
