@@ -2,8 +2,8 @@
 @inherits BasePage
 @inject IJSRuntime JSRuntime
 
-<div style="width: 270px" class="flex flex-col justify-center items-center p-4 rounded-lg text-lg text-center">
-    <div @onclick="GetColor" class="shadow cursor-pointer rounded p-2 bg-gray-100 border border-gray-200">
+<div style="width: 270px" class="popup-container">
+    <div @onclick="GetColor" class="dropper-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pipette">
             <path d="m2 22 1-1h3l9-9" />
@@ -11,14 +11,14 @@
             <path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8a2.1 2.1 0 1 1 3-3l.4.4Z" />
         </svg>
     </div>
-    <h1 class="font-bold text-2xl">Blazor Eyedropper</h1>
+    <h2>Blazor Eyedropper</h2>
     <p>Chrome/Edge Extension built with .NET Blazor. Try it out and pick a color!</p>
     <br>
     <p>Your picked color is:</p>
-    <div class="p-2 mb-2 flex justify-center items-center space-x-2">
-        <div style="background-color: @selectedColor" class="h-4 w-4 rounded-sm"></div>
-        <div>@selectedColor</div>
-        <Button @onclick="CopyColor" Type="@ButtonType.Primary" Size="@ButtonSize.Default">Copy</Button>
+    <div class="picked">
+        <div style="background-color: @selectedColor" class="picked-indicator"></div>
+        <div style="margin-right: 0.5rem;">@selectedColor</div>
+        <Button @onclick="CopyColor" Type="@ButtonType.Primary" Size="@ButtonSize.Small">Copy</Button>
     </div>
 </div>
 

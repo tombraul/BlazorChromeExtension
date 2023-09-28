@@ -15,5 +15,10 @@
     <None Include="wwwroot\**\*" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\css\app.css" />
+    <Content Remove="wwwroot\css\icons\LoadingSpinner.css" />
+  </ItemGroup>
+
 
 </Project>
